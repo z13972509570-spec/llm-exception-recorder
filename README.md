@@ -1,3 +1,7 @@
+[![CI](https://github.com/z13972509570-spec/llm-exception-recorder/actions/workflows/ci.yml/badge.svg)](https://github.com/z13972509570-spec/llm-exception-recorder/actions)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
+
 # 📚 LLM Exception Recorder
 
 > 每次大模型 API 异常自动收录规范文档 — 建立 LLM 错误知识库，自动归类、统计、根因分析
@@ -142,3 +146,6 @@ llm-exception-recorder/
 ## 📄 License
 
 MIT © 2026
+
+---
+版本: 1.0.0 | 许可证: MIT | 维护者: @z13972509570-spec
