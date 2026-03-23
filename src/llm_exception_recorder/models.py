@@ -116,12 +116,15 @@ class ErrorStats(BaseModel):
     top_errors: List[Dict] = Field(default_factory=list)
 
     def to_markdown(self) -> str:
+        avg_time = f"{self.avg_response_time:.2f}s" if self.avg_response_time else "N/A"
+        error_rate = f"{self.error_rate*100:.1f}%" if self.error_rate else "N/A"
+        
         md = f"""# LLM 错误统计报告
 
 ## 概览
 - **总错误数**: {self.total_errors}
-- **平均响应时间**: {self.avg_response_time:.2f}s if self.avg_response_time else 'N/A'
-- **错误率**: {self.error_rate*100:.1f}% if self.error_rate else 'N/A'
+- **平均响应时间**: {avg_time}
+- **错误率**: {error_rate}
 
 ## 按类型分布
 """
